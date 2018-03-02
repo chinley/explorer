@@ -1,0 +1,288 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "打开(&O)",                    ID_MENUOPEN
+        MENUITEM "文件（档）查看",              ID_MENUOPENFILE
+        POPUP "新建(&W)"
+        BEGIN
+            MENUITEM "文件夹(&F)",                  ID_MENUNEWDIRECTORY
+            MENUITEM "快捷方式(&S)",                ID_MENUNEWSHORTCUT
+            MENUITEM SEPARATOR
+            MENUITEM "BMP图像",                     ID_MENUNEWBMP
+            MENUITEM "Microsoft Word 文档",         ID_MENUCREATEWORD
+            MENUITEM "Microsoft PowerPoint 演示文稿", ID_MENUCREATEPPT
+            MENUITEM "文本文档",                    ID_MENUNEWTEXT
+            MENUITEM "波形声音",                    ID_MENUCREATEWAV
+            MENUITEM "Microsoft Excel 工作表",      ID_MENUCREATEEXCEL
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "删除(&D)",                    ID_MENUDELETE
+        MENUITEM "重命名(&M)",                  ID_MENURENAME
+        MENUITEM "属性(&R)",                    ID_MENUATTRIBUTE
+        MENUITEM SEPARATOR
+        MENUITEM "关闭(&C)",                    ID_MENUEXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",            ID_MENUCUT
+        MENUITEM "复制(&C)\tCtrl+C",            ID_MENUCOPY
+        MENUITEM "粘贴(&P)\tCtrl+V",            ID_MENUPASTE
+        MENUITEM SEPARATOR
+        MENUITEM "复制到文件夹(&F)...",         ID_MENUCOPYTODIRECTORY
+        MENUITEM "移动到文件夹(&V)...",         ID_MENUMOVETODIRECTORY
+        MENUITEM SEPARATOR
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "图标(&N)",                    ID_MENUICON
+        MENUITEM "列表(&L)",                    ID_MENULIST
+        MENUITEM "详细信息(&D)",                ID_MENURESOURCE
+        MENUITEM SEPARATOR
+        MENUITEM "刷新(&R)",                    ID_MENUREFRESH
+    END
+    POPUP "排序方式(&I)"
+    BEGIN
+        MENUITEM "名称(&N)",                    ID_MENUSORTNAME
+        MENUITEM "大小(&S)",                    ID_MENUSORTSIZE
+        MENUITEM "类型(&T)",                    ID_MENUSORTSTYPE
+        MENUITEM "修改时间(&M)",                ID_MENUSORTWRITETIME
+    END
+    MENUITEM "浏览器主页",                  ID_MENUHOMEPAGE
+    MENUITEM "全部选定(&A)",                ID_MENUSELECTALL
+    MENUITEM "反向选择(&I)",                ID_MENUINVERSESELECT
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "帮助和支持中心(&H)",          ID_MUNEHELPCENTER
+        MENUITEM "这份Windows合法吗(&L)?",      ID_MENUISRIGHTFUL
+    END
+    POPUP "关机(&S)"
+    BEGIN
+        MENUITEM "关机(&S)",                    ID_SHUTDOWN
+        MENUITEM "重启(&R)",                    ID_REBOOT
+        MENUITEM "注销(&L)",                    ID_LOGOFF
+    END
+    POPUP "关于(&A)"
+    BEGIN
+        MENUITEM "应用程序信息",                ID_MENUABOUT
+        MENUITEM "操作系统版本信息",            ID_OSVERSION
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON    DISCARDABLE     "icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS DISCARDABLE 
+BEGIN
+    "A",            ID_MENUSELECTALL,       VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_MENUCOPY,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_MENUPASTE,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_MENUDELETE,          VIRTKEY, NOINVERT
+    VK_F2,          ID_MENURENAME,          VIRTKEY, NOINVERT
+    VK_F5,          ID_MENUREFRESH,         VIRTKEY, NOINVERT
+    VK_LEFT,        ID_MENUBACK,            VIRTKEY, ALT, NOINVERT
+    VK_RETURN,      ID_FILE_GOTO,           VIRTKEY, CONTROL, NOINVERT
+    VK_RIGHT,       ID_MENUFOWARD,          VIRTKEY, ALT, NOINVERT
+    "X",            ID_MENUCUT,             VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_DIALOG_BITMAP       BITMAP  DISCARDABLE     "about.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOGABOUT DIALOG DISCARDABLE  22, 17, 218, 125
+STYLE DS_MODALFRAME | DS_CENTER | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Windows"
+FONT 8, "System"
+BEGIN
+    CONTROL         104,IDC_STATIC,"Static",SS_BITMAP,2,2,116,117
+    LTEXT           "制作者: ",IDC_STATIC,129,3,66,9
+    PUSHBUTTON      "OK",IDC_DIALOG_OK,119,106,53,15
+    LTEXT           "黄春丽",IDC_STATIC,151,31,32,14
+    LTEXT           "唐福梅",IDC_STATIC,151,15,29,12
+    LTEXT           "指导老师：",IDC_STATIC,128,60,57,12
+    LTEXT           "蔡百灵",IDC_STATIC,151,47,32,11
+    LTEXT           "尹传勇",IDC_STATIC,152,79,28,13
+END
+
+IDD_DIALOGCREATESHORTCUT DIALOG DISCARDABLE  0, 0, 219, 139
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "创建快捷方式"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "取消",ID_BTNCANCEL,171,121,41,11
+    DEFPUSHBUTTON   "> 下一步(&N)",ID_BTNNEXTSTEP,85,121,41,11
+    DEFPUSHBUTTON   "< 上一步(&B)",ID_BTNTMP,7,121,41,11
+    LTEXT           "该向导帮您创建本地或网络程序、文件、文件夹、计算机或Internet文件的快捷方式。",
+                    IDC_STATIC,28,7,162,25
+    LTEXT           "请键入项目的位置(&T):",IDC_STATIC,28,34,76,9
+    EDITTEXT        IDC_EDITSHORTCUTADDR,30,47,107,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "浏览(&R)...",ID_BTNBROWSE,151,47,35,11
+    LTEXT           "单击“下一步”继续。",IDC_STATIC,80,72,68,8
+END
+
+IDD_DIALOGSHORTCUTTITLE DIALOG DISCARDABLE  0, 0, 219, 139
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择程序标题"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "取消",ID_BTNCANCEL,171,121,41,11
+    DEFPUSHBUTTON   "完成",ID_BTNCOMPLETE,93,121,41,11
+    DEFPUSHBUTTON   "< 上一步(&B)",ID_BTNLASTSTEP,7,121,41,11
+    LTEXT           "键入该快捷方式的名称(&T):",IDC_STATIC,66,7,91,8
+    EDITTEXT        IDC_EDITSHORTCUTNAME,36,19,142,12,ES_AUTOHSCROLL
+    LTEXT           "单击完成创建创建快捷方式。",IDC_STATIC,60,48,104,10
+END
+
+IDD_Version DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Your OS Version Information: "
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,66,67,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOGABOUT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_DIALOGCREATESHORTCUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_DIALOGSHORTCUTTITLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_Version, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "MyResourceExplorer"
+    IDS_HELLO               "HELLO!WELCOME!"
+    IDC_EXPLORER            "MYRESOURCEEXPLORER"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MyOs - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/MyOs.res" /d "NDEBUG" /d "_AFXDLL" "C:\Users\mandy\Desktop\蔡百灵、唐福梅、黄春丽\操作系统实验代码\操作系统\MyOs.rc"" 
+Creating temporary file "C:\Users\mandy\AppData\Local\Temp\RSPA4E.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fp"Release/MyOs.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\mandy\Desktop\蔡百灵、唐福梅、黄春丽\操作系统实验代码\操作系统\MyOs.cpp"
+"C:\Users\mandy\Desktop\蔡百灵、唐福梅、黄春丽\操作系统实验代码\操作系统\MyOsDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\mandy\AppData\Local\Temp\RSPA4E.tmp" 
+Creating temporary file "C:\Users\mandy\AppData\Local\Temp\RSPA6E.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fp"Release/MyOs.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\mandy\Desktop\蔡百灵、唐福梅、黄春丽\操作系统实验代码\操作系统\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\mandy\AppData\Local\Temp\RSPA6E.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/MyOs.pdb" /machine:I386 /out:"Release/MyOs.exe"  ".\Release\MyOs.obj" ".\Release\MyOsDlg.obj" ".\Release\StdAfx.obj" ".\Release\MyOs.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MyOs.cpp
+MyOsDlg.cpp
+Generating Code...
+Linking...
+LINK : fatal error LNK1104: cannot open file "Release/MyOs.exe"
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+MyOs.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

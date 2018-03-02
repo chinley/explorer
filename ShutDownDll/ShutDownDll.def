@@ -1,0 +1,7 @@
+LIBRARY ShutDownDll
+
+EXPORTS
+EnableShutdownPrivilege	@1
+Shutdown	@2
+Logoff	@3
+Reboot	@4
